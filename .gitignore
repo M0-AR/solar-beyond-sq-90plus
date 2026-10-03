@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-results/
-figures/
 .ipynb_checkpoints/
 .venv/
+# NOTE: results/, figures/, demo/ and preview.html are TRACKED on purpose —
+# the README and showcase page embed them, so clones must render offline.

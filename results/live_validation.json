@@ -1,0 +1,106 @@
+{
+  "date_utc": "2026-10-03T18:12:02.489894+00:00",
+  "model_etas": {
+    "sq_1.34": 0.30711516210964096,
+    "tandem_2j": 0.4230506728328616,
+    "fission_derated": 0.2405885625919382,
+    "tpv_bb": 0.15459691423066887,
+    "tpv_sel": 0.33227430070162667,
+    "hot_fast": 0.3150559942793551,
+    "hot_slow": 0.5099781938768864
+  },
+  "ordering_laws": {
+    "tandem_gt_single": true,
+    "fission_gt_base": true,
+    "tpv_sel_gt_bb": true,
+    "hot_slow_gt_fast": true
+  },
+  "sites": [
+    {
+      "site": "Riyadh_SA",
+      "source": "open-meteo-live",
+      "hours": 72,
+      "kwh_per_kwp_3d_sq": 4.94,
+      "kwh_per_kwp_3d_tandem": 6.8,
+      "tandem_beats_single_live": true,
+      "plausible": true
+    },
+    {
+      "site": "Berlin_DE",
+      "source": "open-meteo-live",
+      "hours": 72,
+      "kwh_per_kwp_3d_sq": 2.34,
+      "kwh_per_kwp_3d_tandem": 3.22,
+      "tandem_beats_single_live": true,
+      "plausible": true
+    },
+    {
+      "site": "Atacama_CL",
+      "source": "open-meteo-live",
+      "hours": 72,
+      "kwh_per_kwp_3d_sq": 6.28,
+      "kwh_per_kwp_3d_tandem": 8.64,
+      "tandem_beats_single_live": true,
+      "plausible": true
+    }
+  ],
+  "records_audited": [
+    {
+      "tech": "Si crystalline cell",
+      "eta": 0.281,
+      "source": "Green v68 / ISFH 03-2026 (LONGi n-type HT)",
+      "kind": "1J"
+    },
+    {
+      "tech": "Perovskite cell",
+      "eta": 0.28,
+      "source": "Green v68 / NPVM 02-2026 (HainanU)",
+      "kind": "1J"
+    },
+    {
+      "tech": "Perovskite/Si tandem 1cm2",
+      "eta": 0.352,
+      "source": "Green v68 / ESTI 02-2026 (LONGi 2T)",
+      "kind": "2J"
+    },
+    {
+      "tech": "Perovskite/Si tandem record",
+      "eta": 0.355,
+      "source": "LONGi 2026-07-14 / ESTI",
+      "kind": "2J"
+    },
+    {
+      "tech": "TOPCon perovskite/Si (Jinko)",
+      "eta": 0.3482,
+      "source": "SIMIT 2026-06-19 (JinkoSolar)",
+      "kind": "2J"
+    },
+    {
+      "tech": "Si module ceiling (lab)",
+      "eta": 0.264,
+      "source": "Green v68 modules",
+      "kind": "1J-module"
+    },
+    {
+      "tech": "TPV MIT selective emitter",
+      "eta": 0.4,
+      "source": "MIT TPV >40% (sweep consensus)",
+      "kind": "TPV"
+    },
+    {
+      "tech": "Singlet-fission QY (solution)",
+      "eta": null,
+      "qy": 1.3,
+      "source": "Kyushu/JGU JACS 2026-03-25 (Mo spin-flip + tetracene)",
+      "kind": "QY"
+    },
+    {
+      "tech": "Quantum-cutting PLQY / EQE",
+      "eta": null,
+      "qy": 1.7,
+      "eqe": 1.172,
+      "source": "Joule 2026-07 (CsPbCl3:Yb / c-Si 26.00%)",
+      "kind": "QY"
+    }
+  ]
+}

@@ -11,6 +11,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: pytest -q
       - run: python -m src.benchmarks
+      - run: python scripts/verify_readme.py
+      - run: python scripts/make_demo.py && python scripts/build_preview.py
       - run: python experiments/01_sq_reproduction.py
       - run: python experiments/02_tandem_vs_records.py
       - run: python experiments/03_rectenna_cutoff.py

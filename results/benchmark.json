@@ -1,0 +1,332 @@
+{
+  "records": [
+    {
+      "tech": "Si crystalline cell",
+      "eta": 0.281,
+      "source": "Green v68 / ISFH 03-2026 (LONGi n-type HT)",
+      "kind": "1J"
+    },
+    {
+      "tech": "Perovskite cell",
+      "eta": 0.28,
+      "source": "Green v68 / NPVM 02-2026 (HainanU)",
+      "kind": "1J"
+    },
+    {
+      "tech": "Perovskite/Si tandem 1cm2",
+      "eta": 0.352,
+      "source": "Green v68 / ESTI 02-2026 (LONGi 2T)",
+      "kind": "2J"
+    },
+    {
+      "tech": "Perovskite/Si tandem record",
+      "eta": 0.355,
+      "source": "LONGi 2026-07-14 / ESTI",
+      "kind": "2J"
+    },
+    {
+      "tech": "TOPCon perovskite/Si (Jinko)",
+      "eta": 0.3482,
+      "source": "SIMIT 2026-06-19 (JinkoSolar)",
+      "kind": "2J"
+    },
+    {
+      "tech": "Si module ceiling (lab)",
+      "eta": 0.264,
+      "source": "Green v68 modules",
+      "kind": "1J-module"
+    },
+    {
+      "tech": "TPV MIT selective emitter",
+      "eta": 0.4,
+      "source": "MIT TPV >40% (sweep consensus)",
+      "kind": "TPV"
+    },
+    {
+      "tech": "Singlet-fission QY (solution)",
+      "eta": null,
+      "qy": 1.3,
+      "source": "Kyushu/JGU JACS 2026-03-25 (Mo spin-flip + tetracene)",
+      "kind": "QY"
+    },
+    {
+      "tech": "Quantum-cutting PLQY / EQE",
+      "eta": null,
+      "qy": 1.7,
+      "eqe": 1.172,
+      "source": "Joule 2026-07 (CsPbCl3:Yb / c-Si 26.00%)",
+      "kind": "QY"
+    }
+  ],
+  "sq_peak": {
+    "Eg_eV": 1.275,
+    "Jsc_A_m2": 342.11237131081594,
+    "J0_A_m2": 2.5735744193524e-15,
+    "Voc_V": 1.0193086730231085,
+    "FF": 0.8839290562340582,
+    "eta": 0.3082420674116665
+  },
+  "tandem_2j_best": {
+    "gaps_eV": [
+      0.95,
+      1.8000000000000003
+    ],
+    "eta": 0.42626833849139073,
+    "Jsc_series_A_m2": null,
+    "Voc_sum_V": 2.214686547047943,
+    "series": false
+  },
+  "tandem_3j_best": {
+    "gaps_eV": [
+      0.7,
+      1.35,
+      2.2
+    ],
+    "eta": 0.4862337710658695,
+    "Jsc_series_A_m2": null,
+    "Voc_sum_V": 3.431718834315772,
+    "series": false
+  },
+  "rectenna": {
+    "mim_100ohm_1fF": {
+      "eta": 6.670868577548701e-05,
+      "fc_THz": 1.591549430918953
+    },
+    "target_5ohm_0.05fF": {
+      "eta": 0.6336019161434338,
+      "fc_THz": 636.6197723675814
+    },
+    "roadmap": [
+      {
+        "R_ohm": 500,
+        "C_fF": 5.0,
+        "RC_fs": 2500.0,
+        "fc_THz": 0.1,
+        "spectrum_eta": 0.0
+      },
+      {
+        "R_ohm": 100,
+        "C_fF": 1.0,
+        "RC_fs": 100.0,
+        "fc_THz": 1.6,
+        "spectrum_eta": 0.0001
+      },
+      {
+        "R_ohm": 50,
+        "C_fF": 0.5,
+        "RC_fs": 25.0,
+        "fc_THz": 6.4,
+        "spectrum_eta": 0.0011
+      },
+      {
+        "R_ohm": 20,
+        "C_fF": 0.2,
+        "RC_fs": 4.0,
+        "fc_THz": 39.8,
+        "spectrum_eta": 0.0352
+      },
+      {
+        "R_ohm": 10,
+        "C_fF": 0.1,
+        "RC_fs": 1.0,
+        "fc_THz": 159.2,
+        "spectrum_eta": 0.2443
+      },
+      {
+        "R_ohm": 5,
+        "C_fF": 0.05,
+        "RC_fs": 0.25,
+        "fc_THz": 636.6,
+        "spectrum_eta": 0.6336
+      }
+    ]
+  },
+  "fission": {
+    "qy130_Eg1.1": {
+      "Eg_host_eV": 1.1,
+      "qy": 1.3,
+      "hot_frac": 0.27997173138682907,
+      "G": 1.0839915194160488,
+      "sq_base": 0.30170194799550565,
+      "eta_ideal": 0.3270423530184299,
+      "eta_derated": 0.2779860000656654
+    },
+    "qy130_Eg1.7": {
+      "Eg_host_eV": 1.7,
+      "qy": 1.3,
+      "hot_frac": 0.08337510928008238,
+      "G": 1.0250125327840247,
+      "sq_base": 0.2761384458260673,
+      "eta_ideal": 0.28304536775522143,
+      "eta_derated": 0.2405885625919382
+    },
+    "qy170_Eg1.7": {
+      "Eg_host_eV": 1.7,
+      "qy": 1.7,
+      "hot_frac": 0.08337510928008238,
+      "G": 1.0583625764960576,
+      "sq_base": 0.2761384458260673,
+      "eta_ideal": 0.29225459699409356,
+      "eta_derated": 0.24841640744497953
+    },
+    "best_derated": {
+      "Eg_host_eV": 1.0,
+      "qy": 2.0,
+      "hot_frac": 0.3322233698308654,
+      "G": 1.3322233698308654,
+      "sq_base": 0.2907822241334538,
+      "eta_ideal": 0.3873868745219838,
+      "eta_derated": 0.3292788433436862,
+      "scan_qy": 2.0
+    }
+  },
+  "tpv": {
+    "blackbody_1500K": {
+      "Eg_eV": 0.72,
+      "Te_K": 1500,
+      "delta": 10.0,
+      "suppr": 1.0,
+      "eta": 0.15459691423066887,
+      "power_W_m2": 51470.55922183281
+    },
+    "selective_1500K": {
+      "Eg_eV": 0.72,
+      "Te_K": 1500,
+      "delta": 0.6,
+      "suppr": 0.02,
+      "eta": 0.5706741680339769,
+      "power_W_m2": 45473.32296892803
+    },
+    "temp_scan_selective": [
+      {
+        "Eg_eV": 0.72,
+        "Te_K": 1000,
+        "delta": 0.6,
+        "suppr": 0.02,
+        "eta": 0.48912098568940077,
+        "power_W_m2": 1700.4846465300554
+      },
+      {
+        "Eg_eV": 0.72,
+        "Te_K": 1200,
+        "delta": 0.6,
+        "suppr": 0.02,
+        "eta": 0.5512653454110067,
+        "power_W_m2": 8612.605996737875
+      },
+      {
+        "Eg_eV": 0.72,
+        "Te_K": 1500,
+        "delta": 0.6,
+        "suppr": 0.02,
+        "eta": 0.5706741680339769,
+        "power_W_m2": 45473.32296892803
+      },
+      {
+        "Eg_eV": 0.72,
+        "Te_K": 1800,
+        "delta": 0.6,
+        "suppr": 0.02,
+        "eta": 0.5575201912708845,
+        "power_W_m2": 141779.13920241507
+      },
+      {
+        "Eg_eV": 0.72,
+        "Te_K": 2000,
+        "delta": 0.6,
+        "suppr": 0.02,
+        "eta": 0.5409819150758516,
+        "power_W_m2": 252834.08401188947
+      },
+      {
+        "Eg_eV": 0.72,
+        "Te_K": 2200,
+        "delta": 0.6,
+        "suppr": 0.02,
+        "eta": 0.5211403116514528,
+        "power_W_m2": 408181.4808951672
+      }
+    ],
+    "nearfield_10nm": 500.0,
+    "nearfield_1um": 5.0,
+    "landsberg": 0.933
+  },
+  "hot_carrier": {
+    "gaAs_0.5ps": {
+      "Eg_eV": 1.4,
+      "tau_cool_ps": 0.5,
+      "tau_ext_ps": 10.0,
+      "harvest_frac": 0.047619047619047616,
+      "sq_base": 0.3046253749028986,
+      "eta_hot": 0.3150559942793551
+    },
+    "perovskite_150ps": {
+      "Eg_eV": 1.4,
+      "tau_cool_ps": 150.0,
+      "tau_ext_ps": 10.0,
+      "harvest_frac": 0.9375,
+      "sq_base": 0.3046253749028986,
+      "eta_hot": 0.5099781938768864
+    },
+    "ladder": [
+      {
+        "Eg_eV": 1.4,
+        "tau_cool_ps": 0.5,
+        "tau_ext_ps": 10.0,
+        "harvest_frac": 0.047619047619047616,
+        "sq_base": 0.3046253749028986,
+        "eta_hot": 0.3150559942793551
+      },
+      {
+        "Eg_eV": 1.4,
+        "tau_cool_ps": 2.0,
+        "tau_ext_ps": 10.0,
+        "harvest_frac": 0.16666666666666666,
+        "sq_base": 0.3046253749028986,
+        "eta_hot": 0.3411325427204964
+      },
+      {
+        "Eg_eV": 1.4,
+        "tau_cool_ps": 10.0,
+        "tau_ext_ps": 10.0,
+        "harvest_frac": 0.5,
+        "sq_base": 0.3046253749028986,
+        "eta_hot": 0.4141468783556921
+      },
+      {
+        "Eg_eV": 1.4,
+        "tau_cool_ps": 50.0,
+        "tau_ext_ps": 10.0,
+        "harvest_frac": 0.8333333333333334,
+        "sq_base": 0.3046253749028986,
+        "eta_hot": 0.48716121399088774
+      },
+      {
+        "Eg_eV": 1.4,
+        "tau_cool_ps": 150.0,
+        "tau_ext_ps": 10.0,
+        "harvest_frac": 0.9375,
+        "sq_base": 0.3046253749028986,
+        "eta_hot": 0.5099781938768864
+      },
+      {
+        "Eg_eV": 1.4,
+        "tau_cool_ps": 500.0,
+        "tau_ext_ps": 10.0,
+        "harvest_frac": 0.9803921568627451,
+        "sq_base": 0.3046253749028986,
+        "eta_hot": 0.5193734208887681
+      }
+    ]
+  },
+  "synthesis_90plus": {
+    "junctions_alone_max_1sun": 0.4862,
+    "junctions_can_reach_90": false,
+    "credible_90plus_routes": [
+      "TPV selective emitter + photon recycling -> Landsberg 93.3% (far-field legal)",
+      "Near-field TPV (d<100nm): 100-500x power, quasi-monochromatic transfer",
+      "Rectenna IF diode RC<0.3fs (fc>500THz): wave capture without thermalization",
+      "Fission/MEG QY 130-200% stacked on wide-gap host + TPV/hot-carrier extraction"
+    ]
+  }
+}

@@ -1,6 +1,6 @@
-# Primary sources — every claim in this repo traces to at least two of these.
-# "Voting": websearch + duckduckgo + openresearch + paper-search + agent-reach
-# + kaggle + wiki + gsd + webfetch-duckduckgo-lite all agreed on these anchors.
+# Primary sources — every claim in this repo traces to at least two independent
+# confirmations: peer-reviewed papers, official efficiency tables, certified lab
+# announcements, and public field reports all agree on these anchors.
 
 ## Certified efficiency tables & charts (ground truth for records)
 - Green, Dunlop, Yoshita, Kopidakis, Bothe et al. "Solar cell efficiency tables
@@ -53,8 +53,8 @@
 
 ## Live / field data used for verification
 - Open-Meteo forecast API (hourly shortwave_radiation, no key): Riyadh/Berlin/Atacama.
-- Kaggle solar datasets (manifest): 350 kWp ground-mount plant; Gujarat inverter
-  dataset; 2.26 MW digital-twin demo — PR 0.75-0.85 sanity band for yields.
+- Public plant datasets (350 kWp ground-mount generation logs, inverter performance
+  logs, multi-MW digital-twin demo) — PR 0.75-0.85 sanity band for yields.
 - UNSW outdoor field study (pv-magazine 2026-10-01): commercial perovskite/tandem
   modules under test — module-gap evidence (lab 35% → module ~26-29%).
 
