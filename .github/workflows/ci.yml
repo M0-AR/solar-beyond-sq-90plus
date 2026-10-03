@@ -1,0 +1,19 @@
+name: physics-ci
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+      - run: python -m src.benchmarks
+      - run: python experiments/01_sq_reproduction.py
+      - run: python experiments/02_tandem_vs_records.py
+      - run: python experiments/03_rectenna_cutoff.py
+      - run: python experiments/04_fission_gain.py
+      - run: python experiments/05_tpv_selective.py
+      - run: python experiments/06_hotcarrier_window.py

@@ -1,0 +1,31 @@
+services:
+  bench:
+    build: .
+    container_name: beyond-sq-bench
+    volumes:
+      - ./results:/app/results
+      - ./figures:/app/figures
+    environment:
+      - PYTHONPATH=/app
+      - MPLBACKEND=Agg
+    command: python -m src.benchmarks
+
+  validate-live:
+    build: .
+    container_name: beyond-sq-live
+    volumes:
+      - ./results:/app/results
+    environment:
+      - PYTHONPATH=/app
+      - MPLBACKEND=Agg
+    command: python -m src.validate_live
+
+  lab:
+    build: .
+    container_name: beyond-sq-lab
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=beyond-sq
+    profiles: ["lab"]
